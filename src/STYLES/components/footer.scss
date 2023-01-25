@@ -1,0 +1,64 @@
+.footer {
+  position: relative;
+
+  &__policy {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $colorGreyLegathy;
+  }
+
+  &__logo {
+    display: none;
+
+    @include onPad {
+      display: block;
+      margin-bottom: 65px;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__icons {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+
+    @include onPad {
+      gap: 57px;
+    }
+
+    @include onDesktop {
+      gap: 45px;
+    }
+  }
+}
+
+.icon {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__arrow-up {
+    display: none;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    right: 0;
+    top: 0;
+
+    @include onPad {
+      display: block;
+    }
+  }
+}

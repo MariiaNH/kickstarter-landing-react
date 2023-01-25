@@ -1,0 +1,251 @@
+.aboutUs {
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include onPad {
+    margin-bottom: 140px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 170px;
+  }
+
+  &__parts {
+    margin-bottom: 110px;
+
+    @include onPad {
+      margin-bottom: 140px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 160px;
+      display: flex;
+      flex-direction: column;
+      gap: 170px;
+    }
+
+    &-item {
+      margin-bottom: 110px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+
+      @include onPad {
+        margin-bottom: 140px;
+      }
+
+      @include onDesktop {
+        margin-bottom: 160px;
+      }
+
+      &-1 {
+        flex-direction: column;
+
+        @include onPad {
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 30px;
+        }
+      }
+
+      &-2 {
+        flex-direction: column-reverse;
+
+        @include onPad {
+          flex-direction: row;
+          align-items: flex-start;
+          gap: 30px;
+        }
+      }
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include onPad {
+          max-width: 50%;
+        }
+      }
+
+      &-image {
+        position: absolute;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+
+        transition: all .4s;
+
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+
+      &-image-container {
+        position: relative;
+        display: flex;
+        min-width: 260px;
+        max-width: 80%;
+        width: 100%;
+        overflow: hidden;
+        height: 210px;
+
+
+        @include onPad {
+          height: 415px;
+        }
+
+        @include onDesktop {
+          height: 390px;
+          margin-left: 0;
+        }
+
+        &-1 {
+          @include onPad {
+            margin-left: -$containerHorizontalOnPad;
+          }
+        }
+        &-2 {
+          @include onPad {
+            margin-right: -$containerHorizontalOnPad;
+          }
+        }
+      }
+
+      &-title {
+        margin-bottom: 30px;
+
+        text-align: start;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: $colorMain;
+      }
+
+      &-text {
+        margin-bottom: 30px;
+        text-align: start;
+        color: $colorGrey;
+
+        @include onPad {
+          margin-bottom: 60px;
+        }
+      }
+
+      &-link {
+        cursor: pointer;
+        margin-bottom: 5px;
+        position: relative;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: $colorAccentBright;
+        text-decoration: none;
+
+        transition: all 0.4s;
+        &:after {
+          display: block;
+          content: "";
+          margin-top: 5px;
+          width: 53px;
+          height: 1px;
+          background-color: #0db2b3;
+          transition: all 0.4s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+
+        //&::after {
+        //  position: absolute;
+        //  width: 65px;
+        //  height: 1px;
+        //  top: 20px;
+        //  left: 0;
+        //  content: '';
+        //  background-color: $colorAccentBright;
+        //  transition: all .4s;
+        //
+        //  &:hover::after {
+        //    width: 100%;
+        //  }
+        //}
+      }
+    }
+  }
+
+  &__citation {
+
+    &-quotes {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      width: 208px;
+      height: 171px;
+    }
+
+    &-text {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+
+      &-paragraf {
+        margin-bottom: 30px;
+        max-width: 260px;
+        text-align: center;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: $colorMain;
+        text-align: center;
+
+        @include onPad {
+          margin-bottom: 40px;
+          max-width: 700px;
+
+          font-size: 24px;
+          line-height: 36px;
+        }
+
+        @include onDesktop {
+          margin-bottom: 30px;
+          max-width: 790px;
+          align-items: center;
+        }
+      }
+    }
+
+    &-author {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-image-container {
+        width: 62px;
+        height: 62px;
+      }
+
+      &-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: $colorMain;
+      }
+
+      &-position {
+        font-size: 14px;
+        line-height: 21px;
+        color: $colorGrey;
+      }
+    }
+  }
+}

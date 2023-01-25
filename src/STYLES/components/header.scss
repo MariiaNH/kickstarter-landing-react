@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @include onPad {
+    margin-bottom: 140px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 180px;
+  }
+
+  &__language-toggler {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+
+    &-select {
+      text-decoration: none;
+      text-transform: uppercase;
+
+      font-family: 'Helvetica Neue';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 18px;
+      color: $colorGreyLight;
+
+      &--hover {
+        transition: all 0.3s ease;
+
+        &:hover {
+          font-weight: bold;
+          color: $colorMain;
+        }
+      }
+    }
+
+    @include onPad {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    width: 161px;
+    height: 26px;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 25px;
+
+    @include onDesktop {
+      gap: 50px;
+    }
+  }
+
+  &__buy-button {
+    cursor: pointer;
+    display: none;
+    width: 100px;
+    height: 48px;
+    background-color: $colorMain;
+
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @include onPad {
+      display: flex;
+    }
+
+    &-link {
+      link-style: none!important;
+      text-decoration: none!important;
+      text-transform: uppercase;
+      color: $colorWhite;
+
+      font-family: 'Helvetica Neue', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}

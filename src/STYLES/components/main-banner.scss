@@ -1,0 +1,102 @@
+.main-banner {
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @include onPad {
+    flex-direction: row;
+    gap: 1px;
+    margin-bottom: 140px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 170px;
+  }
+}
+
+.main-banner__image-container {
+  position: relative;
+  margin-left: 30px;
+  min-width: 320px;
+  width: 100%;
+  margin-bottom: 40px;
+  height: 245px;
+  overflow: hidden;
+  transition: all 0.4s;
+
+  @include onPad {
+    height: 317px;
+    transform: translateX(-18px);
+  }
+
+  @include onDesktop {
+    height: 464px;
+    max-width: 939px;
+    transform: translateX(18px);
+  }
+}
+
+.main-banner__image {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  //object-fit: cover;
+  //object-position: left top;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.main-banner__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include onPad {
+    gap: 30px;
+    width: 340px;
+  }
+
+  @include onDesktop {
+    width: 380px;
+  }
+}
+
+.main-banner__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  text-transform: uppercase;
+  color: $colorMain;
+
+  @include onPad {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
+  @include onDesktop {
+    font-size: 62px;
+    line-height: 78px;
+  }
+}
+
+.main-banner__text {
+  color: $colorMain;
+
+  @include onPad {
+    width: 250px;
+  }
+
+  @include onDesktop {
+    width: inherit;
+  }
+}

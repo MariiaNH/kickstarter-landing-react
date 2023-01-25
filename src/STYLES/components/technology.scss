@@ -1,0 +1,118 @@
+.technology {
+  margin-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include onPad {
+    margin-bottom: 140px;
+  }
+
+  @include onDesktop {
+    argin-bottom: 170px;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image {
+    max-width: 295px;
+    max-height: 195px;
+
+    @include onPad {
+      max-width: 700px;
+      max-height: 430px;
+    }
+
+    @include onDesktop {
+      max-width: 846px;
+      max-height: 520px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 65px;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+
+    @include onPad {
+      width: 700px;
+      margin-bottom: 75px;
+      flex-wrap: wrap;
+    }
+
+    @include onDesktop {
+      width: 1200px;
+      argin-bottom: 105px;
+      gap: 30px;
+      flex-wrap: nowrap;
+    }
+
+    &--onPad {
+      display: flex;
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+
+    &--onDesktop {
+      display: none;
+
+      @include onDesktop {
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 65px;
+    height: 285px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include onPad {
+      width: 340px;
+    }
+
+    @include onDesktop {
+      width: 275px;
+    }
+
+    &-image-container {
+      margin-bottom: 35px;
+      height: 50px;
+    }
+
+    &-image {
+      object-fit: contain;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+
+      text-transform: uppercase;
+      color: $colorMain;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+
+      @include onDesktop {
+        height: 56px;
+      }
+    }
+
+    &-description {
+      color: $colorGrey;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+  }
+}

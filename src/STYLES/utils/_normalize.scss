@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 25px 0 20px 0!important;
+  box-sizing: border-box;
+  background-color: #F7F7F7!important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: start;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @include onDesktop {
+    margin: 30px 0;
+  }
+}
+
+p, h1 {
+  text-align: start;
+}
+
+.carousel-indicators {
+  display: none!important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: $colorAccentDark;
+  border-radius: 6px;
+}
+
+.carousel-inner {
+  padding: 0 50px;
+  overflow: visible!important;
+}

@@ -1,0 +1,107 @@
+.contactForm {
+  margin-bottom: 110px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  @include onPad {
+    margin-bottom: 140px;
+
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  @include onDesktop {
+    margin-bottom: 170px;
+
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $colorMain;
+
+    @include onPad {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @include onDesktop {
+      font-size: 56px;
+      line-height: 70px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include onPad {
+      min-width: 340px;
+    }
+
+    @include onDesktop {
+      min-width: 580px;
+    }
+
+    &-item {
+    }
+
+    &-field {
+      width: 100%;
+      padding: 12px 20px;
+      background: none;
+      border: 1px solid #828282;
+
+      &::placeholder {
+        color: $colorGreyLegathy;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        outline: none;
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      &--input {
+        height: 48px;
+        margin-bottom: 20px;
+      }
+
+      &--textarea {
+        height: 128px;
+        margin-bottom: 30px;
+        resize: none;
+      }
+    }
+
+    &-submit {
+      cursor: pointer;
+      border: 0;
+      width: 102px;
+      height: 40px;
+      background-color: $colorAccentBright;
+
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $colorWhite;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+    }
+  }
+}

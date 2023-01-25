@@ -1,0 +1,26 @@
+.navigation {
+  margin-bottom: 65px;
+  display: none;
+  justify-content: center;
+  padding: 28px 0;
+
+  @include onDesktop {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 85px;
+  }
+
+  &__item {
+    &-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: $colorMain;
+    }
+  }
+}
