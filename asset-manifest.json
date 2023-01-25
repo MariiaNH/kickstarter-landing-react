@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kickstarter-landing-react/static/css/main.06b9e367.css",
+    "main.js": "/kickstarter-landing-react/static/js/main.2f359f77.js",
+    "static/js/787.afb58d52.chunk.js": "/kickstarter-landing-react/static/js/787.afb58d52.chunk.js",
+    "static/media/aboutUs1.png": "/kickstarter-landing-react/static/media/aboutUs1.7d1543fe9a22245af833.png",
+    "static/media/technology.png": "/kickstarter-landing-react/static/media/technology.bed64c2834a46adbbf15.png",
+    "static/media/main-banner.png": "/kickstarter-landing-react/static/media/main-banner.50f134cde5e00548b06f.png",
+    "static/media/aboutUs2.png": "/kickstarter-landing-react/static/media/aboutUs2.525350999feb0754b292.png",
+    "static/media/features.png": "/kickstarter-landing-react/static/media/features.ec20d86f1d363a9da008.png",
+    "static/media/logo.svg": "/kickstarter-landing-react/static/media/logo.771bd7042c4af2ee19dba15fce92b0c7.svg",
+    "static/media/twitter.svg": "/kickstarter-landing-react/static/media/twitter.639d62a6549d66429b3f9f44ec435025.svg",
+    "index.html": "/kickstarter-landing-react/index.html",
+    "static/media/facebook.svg": "/kickstarter-landing-react/static/media/facebook.7d9bb0ea272c14c4231a87eab6a4c1cf.svg",
+    "main.06b9e367.css.map": "/kickstarter-landing-react/static/css/main.06b9e367.css.map",
+    "main.2f359f77.js.map": "/kickstarter-landing-react/static/js/main.2f359f77.js.map",
+    "787.afb58d52.chunk.js.map": "/kickstarter-landing-react/static/js/787.afb58d52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b9e367.css",
+    "static/js/main.2f359f77.js"
+  ]
+}
